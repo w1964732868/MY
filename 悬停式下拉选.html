@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .dropdown{
+            display: inline-block;
+        }
+
+        .btn{
+            position: relative;
+            display: inline-block;
+            padding:5px 8px;
+            background-color: #fff;
+            border-radius: 4px;
+            border:1px solid #ccc;
+        }
+        .btn:hover{
+            background-color: #ddd;
+        }
+        .menu{
+            display: none;
+            position: absolute;
+            list-style: none;
+            border: 1px solid #eee;
+            min-width: 100px;
+        }
+        .menu li{
+            padding:5px 10px;
+        }
+        .menu li:hover{
+            background-color: #eee;
+        }
+        .dropdown:hover .menu{
+            display: block;
+        }
+        .tzg:hover .p-yincang{
+            display: block;
+        }
+        .dropdown:hover .btn{
+            background-color: #ddd;
+        }
+
+
+
+
+
+
+
+
+
+        .tzg{
+            display: inline-block;
+        }
+        .btn1{
+            position: relative;
+            display: inline-block;
+            padding:5px 8px;
+            background-color: #fff;
+            border-radius: 4px;
+            border:1px solid #ccc;
+        }
+        .btn1:hover{
+            background-color: #ddd;
+        }
+        .p-yincang{
+            display: none;
+            position: absolute;
+            list-style: none;
+            border: 1px solid #eee;
+            min-width: 100px;
+            /*background: #FFF;*/
+        }
+        .p-yincang li{
+            padding:5px 10px;
+        }
+        .p-yincang li:hover{
+            background-color: #eee;
+        }
+        .tzg:hover .btn1{
+            background-color: #ddd;
+        }
+        .df{
+            display:flex;
+        }
+    </style>
+</head>
+<body>
+<div class="df">
+    <div class="dropdown">
+        <div class="btn">Hover me</div>
+        <ul class="menu">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+
+
+    <div class="tzg">
+        <div class="btn1 df">
+            中国大陆
+        </div>
+        <ul class="p-yincang">
+                <a href="#3"><li>免费开店</li></a>
+                <a href="#3"><li>已卖出的宝贝</li></a>
+                <a href="#3"><li>出售中的宝贝</li></a>
+                <a href="#3"><li>卖家培训中心</li></a>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
